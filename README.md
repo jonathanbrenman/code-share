@@ -6,8 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Setup
 1) npm install
 2) Change the enviroment variable to your IP  socketUrl: "http://xxx.xxx.xxx.xxx:9099"
-3) cd assets && bower install
-4) ng build -prod --sm -aot
-5) node server.js
+3) ng build -prod --sm -aot
+4) node server.js
 
 http://xxx.xxx.xxx.xxx:9098
