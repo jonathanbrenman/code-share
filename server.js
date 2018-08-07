@@ -49,8 +49,10 @@ io.on('connection', function(socket){
 		console.log("Update code to all clients");
 		console.log(newCode);
 		clients.forEach(function(client) {
-			console.log(client.id);
-			client.emit('updateCode', newCode);
+			if(socket.id != client.id){
+				console.log(client.id);
+				client.emit('updateCode', newCode);
+			}
 		});
 	});
 });
